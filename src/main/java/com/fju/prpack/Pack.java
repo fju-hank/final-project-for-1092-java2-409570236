@@ -1,6 +1,7 @@
 package com.fju.prpack;
 
 public abstract class Pack {
+
     String name;
     String comName;
     String awb;
@@ -22,6 +23,10 @@ public abstract class Pack {
 
     public void print() {
         System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t" + kg );
+    }
+
+    public void printName() {
+        System.out.println(name);
     }
 
     public abstract String getName();

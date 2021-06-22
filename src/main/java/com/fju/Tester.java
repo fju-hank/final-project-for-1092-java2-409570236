@@ -9,7 +9,7 @@ public class Tester {
 
         Pack1 p1 = new Pack1();
         p1.print();
-
+        System.out.println(p1.getName());
 
 
     }
