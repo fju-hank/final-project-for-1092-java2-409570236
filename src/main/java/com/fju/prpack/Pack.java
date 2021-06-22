@@ -1,18 +1,18 @@
 package com.fju.prpack;
 
-public class Pack {
+public abstract class Pack {
     String name;
     String comName;
     String awb;
     int value;
-    int kg;
+    double kg;
 
 
     public Pack(){
         super();
     }
 
-    public Pack(String name,String comName,String awb, int value, int kg) {
+    public Pack(String name,String comName,String awb, int value, float kg) {
         this.name = name;
         this.comName = comName;
         this.awb = awb;
@@ -24,6 +24,9 @@ public class Pack {
         System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t" + kg);
     }
 
+    public abstract String getName();
+
+    public abstract int getPrice();
 
     }
 

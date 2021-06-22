@@ -1,2 +1,12 @@
+com/fju/prpack/Pack1.java
+ com.fju.prpack.Pack1
+com/fju/prpack/Pack4.java
+ com.fju.prpack.Pack4
+com/fju/prpack/Pack.java
+ com.fju.prpack.Pack
+com/fju/prpack/Pack2.java
+ com.fju.prpack.Pack2
+com/fju/prpack/Pack3.java
+ com.fju.prpack.Pack3
 com/fju/Tester.java
  com.fju.Tester
