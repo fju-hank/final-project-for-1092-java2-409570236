@@ -8,5 +8,7 @@ com/fju/Tester.java
  com.fju.Tester
 com/fju/prpack/Pack3.java
  com.fju.prpack.Pack3
+com/fju/App.java
+ com.fju.App
 com/fju/prpack/Pack2.java
  com.fju.prpack.Pack2
