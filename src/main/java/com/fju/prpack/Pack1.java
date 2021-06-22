@@ -10,10 +10,6 @@ public class Pack1 extends Pack{
         kg = 1.89;
     }
 
-    void printName(String name){
-        this.name = name;
-    }
-
     @Override
     public String getName() {
         return this.name;

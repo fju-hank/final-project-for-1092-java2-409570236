@@ -22,7 +22,7 @@ public abstract class Pack {
     }
 
     public void print() {
-        System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t" + kg );
+        System.out.println(name + "\t\t" + comName + "\t\t" + awb + "\t" + value + "\t\t" + kg );
     }
 
     public void printName() {
