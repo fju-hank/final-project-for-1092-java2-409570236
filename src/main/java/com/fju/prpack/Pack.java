@@ -21,7 +21,7 @@ public abstract class Pack {
     }
 
     public void print() {
-        System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t" + kg);
+        System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t" + kg );
     }
 
     public abstract String getName();

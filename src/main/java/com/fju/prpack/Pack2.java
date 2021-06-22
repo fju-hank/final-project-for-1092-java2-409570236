@@ -3,8 +3,8 @@ package com.fju.prpack;
 public class Pack2 extends Pack{
 
     public Pack2(){
-        name = "褲子";
-        comName = "中通";
+        name = "pants";
+        comName = "com2";
         awb = "75477977125035";
         value = 300;
         kg = 2.4;
@@ -12,12 +12,12 @@ public class Pack2 extends Pack{
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     @Override
     public int getPrice() {
-        return 0;
+        return this.value;
     }
 
 }
