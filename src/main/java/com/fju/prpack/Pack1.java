@@ -4,7 +4,7 @@ public class Pack1 extends Pack{
 
     public Pack1(){
         no = "0";
-        name = "Clothes";
+        name = "clothes";
         comName = "com1";
         awb = "SF1323237989149";
         value = 168;
