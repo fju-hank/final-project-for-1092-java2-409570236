@@ -74,7 +74,7 @@
               <component id="473a2" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
                 <constraints/>
                 <properties>
-                  <background color="-11796656"/>
+                  <background color="-67841"/>
                   <columns value="50"/>
                 </properties>
               </component>

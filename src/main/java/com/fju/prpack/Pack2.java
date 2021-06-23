@@ -3,6 +3,7 @@ package com.fju.prpack;
 public class Pack2 extends Pack{
 
     public Pack2(){
+        no = "002";
         name = "pants";
         comName = "com2";
         awb = "75477977125035";

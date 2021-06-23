@@ -2,6 +2,7 @@ package com.fju.prpack;
 
 public abstract class Pack {
 
+    String no;
     String name;
     String comName;
     String awb;
@@ -13,7 +14,8 @@ public abstract class Pack {
         super();
     }
 
-    public Pack(String name,String comName,String awb, int value, float kg) {
+    public Pack(String no,String name,String comName,String awb, int value, float kg) {
+        this.no = no;
         this.name = name;
         this.comName = comName;
         this.awb = awb;
@@ -22,7 +24,7 @@ public abstract class Pack {
     }
 
     public void print() {
-        System.out.println(name + "\t\t" + comName + "\t\t" + awb + "\t" + value + "\t\t" + kg );
+        System.out.println(no + "\t" + name + "\t" + kg );
     }
 
     public void printName() {
