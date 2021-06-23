@@ -23,7 +23,7 @@ public class Tester {
             }
 
 
-            /*
+
             System.out.println();
             System.out.println("輸入想查詢的包裹明細，結束此功能請輸入99");
             int nonum;
@@ -34,7 +34,7 @@ public class Tester {
             }else {
                 System.out.println("end");
             }
-            */
+
 
 
 

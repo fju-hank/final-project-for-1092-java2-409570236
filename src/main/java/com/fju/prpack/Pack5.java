@@ -3,12 +3,12 @@ package com.fju.prpack;
 public class Pack5 extends Pack{
 
     public Pack5(){
-        no = "5";
-        name = "5";
+        no = "4";
+        name = "Shoes";
         comName = "com5";
-        awb = "55";
-        value = 55;
-        kg = 55;
+        awb = "YT5565358325155";
+        value = 560;
+        kg = 2;
     }
 
     @Override
