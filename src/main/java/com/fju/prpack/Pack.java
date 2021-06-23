@@ -9,7 +9,6 @@ public abstract class Pack {
     int value;
     double kg;
 
-
     public Pack(){
         super();
     }
