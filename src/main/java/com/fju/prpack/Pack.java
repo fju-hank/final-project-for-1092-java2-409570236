@@ -27,6 +27,11 @@ public abstract class Pack {
         System.out.println(no + "\t" + name + "\t" + kg );
     }
 
+    public void printnum() {
+        System.out.println("Name    Company AWB             Value   Weight");
+        System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t\t" + kg );
+    }
+
     public void printName() {
         System.out.println(name);
     }

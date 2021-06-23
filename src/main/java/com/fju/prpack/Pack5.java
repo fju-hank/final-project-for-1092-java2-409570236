@@ -1,14 +1,14 @@
 package com.fju.prpack;
 
-public class Pack4 extends Pack{
+public class Pack5 extends Pack{
 
-    public Pack4(){
-        no = "003";
-        name = "3";
-        comName = "com4";
-        awb = "123";
-        value = 123;
-        kg = 123;
+    public Pack5(){
+        no = "5";
+        name = "5";
+        comName = "com5";
+        awb = "55";
+        value = 55;
+        kg = 55;
     }
 
     @Override
