@@ -31,8 +31,8 @@ public abstract class Pack {
         System.out.println(name + "\t" + comName + "\t" + awb + "\t" + value + "\t\t" + kg );
     }
 
-    public void printName() {
-        System.out.println(name);
+    public double printkg() {
+        return kg;
     }
 
     public abstract String getName();

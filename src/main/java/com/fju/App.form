@@ -7,10 +7,10 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="90d82" class="javax.swing.JButton" binding="button1" default-binding="true">
+      <component id="90d82" class="javax.swing.JButton" binding="確認Button" default-binding="true">
         <constraints border-constraint="South"/>
         <properties>
-          <text value="Button"/>
+          <text value="確認"/>
         </properties>
       </component>
       <grid id="aab11" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -25,7 +25,16 @@
             </constraints>
             <properties/>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="b6139" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+                <constraints>
+                  <card name="Card1"/>
+                </constraints>
+                <properties>
+                  <columns value="80"/>
+                </properties>
+              </component>
+            </children>
           </grid>
           <grid id="31581" binding="panel1" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
@@ -39,7 +48,7 @@
                 <properties>
                   <background color="-3083669"/>
                   <foreground color="-10600462"/>
-                  <text value="cool"/>
+                  <text value="輸入倉儲編號:"/>
                 </properties>
               </component>
               <component id="91985" class="javax.swing.JTextField" binding="textField1" default-binding="true">
@@ -64,21 +73,7 @@
             </constraints>
             <properties/>
             <border type="none"/>
-            <children>
-              <component id="d3695" class="javax.swing.JLabel">
-                <constraints/>
-                <properties>
-                  <text value="Label"/>
-                </properties>
-              </component>
-              <component id="473a2" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
-                <constraints/>
-                <properties>
-                  <background color="-67841"/>
-                  <columns value="50"/>
-                </properties>
-              </component>
-            </children>
+            <children/>
           </grid>
           <grid id="1e203" binding="panel4" layout-manager="CardLayout" hgap="0" vgap="0">
             <constraints>
