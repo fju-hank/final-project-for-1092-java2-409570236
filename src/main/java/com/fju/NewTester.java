@@ -12,16 +12,16 @@ public class NewTester {
         Run run = new Run();
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("[輸入您的身分id]");
+        System.out.println("[輸入您的身分]");
         String username = scan.next();
+        System.out.println();
         System.out.println(username + "您好，歡迎使用。");
 
 
-            System.out.println();
             System.out.println("以下為您的所有包裹項目:");
-            System.out.println("No. Name    Weight");
+            System.out.println("Name" + "\t" + "Company" + "\t" + "AWB" + "\t\t\t\t" + "Value" + "\t"+ "Weight");
             for (int i = 0; i < 5; i++) {
-                packs[i].print();
+                packs[i].printnum();
             }
 
             float sumkg = 0;
@@ -96,9 +96,28 @@ public class NewTester {
                 }
         }
         System.out.println("已付款。剩餘金額:" + (total_coin - total) + "元");
+        System.out.println("[填寫備註]");
+        String ps = scan.next();
+
+        System.out.println("=====================================\n" + "訂單編號:" );
+        run.ordernum();
+        System.out.println( "\n" +"使用者:" + "\n" + username + "\n" + "集運包裹:" );
+        System.out.println("No." +"\t" + "Name" + "\t" +"Weight");
+                for (int i = 0; i < 5; i++) {
+                   packs[i].print();
+                }
+        System.out.println("\n" + "運費:" + tran_price + "元" + "\n" + "包裹附加服務:" + total_sservice + "元" + "\n" + "備註:" + ps );
+
+
+
+
+
+
+
 
 
     }
+
 
 
 }
