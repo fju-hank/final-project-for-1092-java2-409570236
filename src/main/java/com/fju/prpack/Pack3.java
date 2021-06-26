@@ -4,7 +4,7 @@ public class Pack3 extends Pack{
 
     public Pack3(){
         no = "2";
-        name = "Shirt";
+        name = "earring";
         comName = "com3";
         awb = "75477977125035";
         value = 210;
