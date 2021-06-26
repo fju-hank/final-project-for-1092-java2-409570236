@@ -10,15 +10,4 @@ public class Pack3 extends Pack{
         value = 210;
         kg = 1.45;
     }
-
-    @Override
-    public String getName() {
-        return this.name;
-    }
-
-    @Override
-    public int getPrice() {
-        return this.value;
-    }
-
 }

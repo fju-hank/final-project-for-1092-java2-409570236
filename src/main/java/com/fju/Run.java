@@ -31,7 +31,7 @@ public class Run {
 
         for(i = 0; i < 12; i++){
             if(i < 3){
-                order_number[i]=(int)((Math.random()*26) + 97);
+                order_number[i]=(int)((Math.random()*26)+97);
             }else{
                 order_number[i] = ((int)(int)((Math.random()*10)+48));
             }

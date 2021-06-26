@@ -35,9 +35,5 @@ public abstract class Pack {
         return kg;
     }
 
-    public abstract String getName();
-
-    public abstract int getPrice();
-
     }
 
