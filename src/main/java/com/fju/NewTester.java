@@ -3,11 +3,12 @@ package com.fju;
 import com.fju.prpack.*;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class NewTester {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("輸入您的身分id:");
+        System.out.println("[輸入您的身分id]");
         String username = scan.next();
         System.out.println(username + "您好，歡迎使用。");
 
@@ -25,15 +26,17 @@ public class NewTester {
         }
         System.out.println("總重量: " + sumkg);
 
-        System.out.println("選擇海運輸入0，選擇空運輸入1");
-            int tran = scan.nextInt();
-            if(tran == 0){
+        System.out.println("[選擇海運輸入0，選擇空運輸入1]");
+            int tran_choose = scan.nextInt();
 
-                System.out.println("運費價格為");
-            }else if ( tran == 1 ){
-                System.out.println("");
+            if(tran_choose == 0){
+                int tran_price = (int) (Math.ceil(sumkg*1.0)/1.0)*45;
+                System.out.println("運費價格為" + tran_price );
+            }else if ( tran_choose == 1 ){
+                int tran_price = (int) (((Math.ceil(sumkg*1.0)/1.0)-1)*85)+120;
+                System.out.println("運費價格為" + tran_price );
             }else {
-                System.out.println("");
+                System.out.println("輸入無效");
             }
 
 
