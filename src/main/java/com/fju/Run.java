@@ -4,7 +4,28 @@ import com.fju.prpack.*;
 
 import java.util.Scanner;
 
-//public class Run {
+public class Run {
+
+    public void tran(){
+        System.out.println("=====================================\n" +
+                "[海運]\n" +
+                "NT.45/kg (未滿1kg以1kg計算)\n" +
+                "[空運]\n" +
+                "首重: NT.120/kg \n" +
+                "續種: NT.85/kg (未滿1kg以1kg計算)\n" +
+                "=====================================");
+    }
+
+    public void service(){
+        System.out.println("=====================================\n" +
+                "1)包裝氣泡棉 $25\n" +
+                "2) 開相拍照 $50\n" +
+                "3) 開箱驗貨 $75\n" +
+                "4) 特殊需求 $100\n" +
+                "=====================================");
+    }
+
+
     //Scanner scan = new Scanner(System.in);
     //Pack[] packs = {new Pack1(), new Pack2(), new Pack3(), new Pack4(), new Pack5()};
 
@@ -83,6 +104,7 @@ import java.util.Scanner;
             }
         } else {
             System.out.println("計算運費為:");
-    }*/
+            */
+    }
 
 
