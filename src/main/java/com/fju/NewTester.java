@@ -50,18 +50,26 @@ public class NewTester {
         int total_sservice =0;
         int service_choose2 =-1;
 
-        if(service_choose1 == 0){
+        if(service_choose1 == 0) {
             run.service();
-            while(service_choose2 != 0) {
+            while (service_choose2 != 0) {
 
                 System.out.println("請選擇服務(輸入0結束功能)");
                 String ss = scan.next();
                 service_choose2 = Integer.parseInt(ss);
-                total_sservice = total_sservice + service_choose2;
-                System.out.println("目前選擇: " + total_sservice);
-            }
+                if (service_choose2 == 1) {
+                    total_sservice = total_sservice + 25;
+                } else if (service_choose2 == 2) {
+                    total_sservice = total_sservice + 50;
+                } else if (service_choose2 == 3) {
+                    total_sservice = total_sservice + 75;
+                } else if (service_choose2 == 4) {
+                    total_sservice = total_sservice + 100;
+                }
+                System.out.println("已加入");
 
-        }else if ( service_choose1 == 1 ){
+            }
+        }    else if ( service_choose1 == 1 ){
         }else {
             System.out.println("輸入無效");
         }
