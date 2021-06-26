@@ -31,16 +31,18 @@ public class NewTester {
         System.out.println("總重量: " + sumkg);
 
         run.tran();
+        int tran_price =0;
+
         System.out.println("[選擇海運輸入0，選擇空運輸入1]");
             int tran_choose = scan.nextInt();
             if(tran_choose == 0){
-                int tran_price = (int) (Math.ceil(sumkg*1.0)/1.0)*45;
+                tran_price = (int) (Math.ceil(sumkg*1.0)/1.0)*45;
                 System.out.println("運費價格為" + tran_price );
             }else if ( tran_choose == 1 ){
-                int tran_price = (int) (((Math.ceil(sumkg*1.0)/1.0)-1)*85)+120;
+                tran_price = (int) (((Math.ceil(sumkg*1.0)/1.0)-1)*85)+120;
                 System.out.println("運費價格為" + tran_price );
             }else {
-                System.out.println("輸入無效");
+                System.out.println("輸入值無效");
             }
 
 
@@ -65,9 +67,10 @@ public class NewTester {
                     total_sservice = total_sservice + 75;
                 } else if (service_choose2 == 4) {
                     total_sservice = total_sservice + 100;
+                }else {
+                    System.out.println("(輸入值無效)");
                 }
-                System.out.println("已加入");
-
+                System.out.println("(已輸入)");
             }
         }    else if ( service_choose1 == 1 ){
         }else {
@@ -76,28 +79,25 @@ public class NewTester {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        int total = 0;
+        int total = (tran_price + total_sservice);
+        System.out.println("總費用:" + total);
+        int total_coin = 0;
         int n = -1;
         while(n != 0) {
-            System.out.println("輸入儲值金額(輸入0結束功能):");
+            System.out.println("輸入儲值金額:");
             String s = scan.next();
             n = Integer.parseInt(s);
-                total = total + n;
-                System.out.println("目前金額: " + total);
+                total_coin = total_coin + n;
+                System.out.println("目前金額: " + total_coin);
+                if(total_coin > (total-1)){
+                    System.out.println("可付款(輸入0結束功能)");
+                }else {
+                    System.out.println("繼續加值");
+                }
         }
-        System.out.println("感謝使用。");
+        System.out.println("已付款。剩餘金額:" + (total_coin - total) + "元");
+
+
     }
 
 
