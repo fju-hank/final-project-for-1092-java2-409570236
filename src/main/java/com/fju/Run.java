@@ -1,8 +1,7 @@
 package com.fju;
 
-import com.fju.prpack.*;
-
-import java.util.Scanner;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Run {
 
@@ -36,12 +35,20 @@ public class Run {
                 order_number[i] = ((int)(int)((Math.random()*10)+48));
             }
         }
+        System.out.print("訂單編號:" + "\t");
         for(i = 0; i < 12; i++){
             System.out.print((char)order_number[i]);
         }
     }
 
+    public void nowTime(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+        SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Date current = new Date();
+        System.out.println("\n" + "現在時間:"+ "\t" + sdFormat.format(current));
     }
+
+}
 
 
 

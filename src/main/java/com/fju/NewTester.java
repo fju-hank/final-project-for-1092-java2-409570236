@@ -30,9 +30,9 @@ public class NewTester {
         }
         System.out.println("總重量: " + sumkg);
 
+
         run.tran();
         int tran_price =0;
-
         System.out.println("[選擇海運輸入0，選擇空運輸入1]");
             int tran_choose = scan.nextInt();
             if(tran_choose == 0){
@@ -46,16 +46,13 @@ public class NewTester {
             }
 
 
-
         System.out.println("[是否要加購包裹附加服務，是輸入0，否輸入1]");
         int service_choose1 = scan.nextInt();
         int total_sservice =0;
         int service_choose2 =-1;
-
         if(service_choose1 == 0) {
             run.service();
             while (service_choose2 != 0) {
-
                 System.out.println("請選擇服務(輸入0結束功能)");
                 String ss = scan.next();
                 service_choose2 = Integer.parseInt(ss);
@@ -67,6 +64,7 @@ public class NewTester {
                     total_sservice = total_sservice + 75;
                 } else if (service_choose2 == 4) {
                     total_sservice = total_sservice + 100;
+                }else if (service_choose2 == 0) {
                 }else {
                     System.out.println("(輸入值無效)");
                 }
@@ -76,7 +74,6 @@ public class NewTester {
         }else {
             System.out.println("輸入無效");
         }
-
 
 
         int total = (tran_price + total_sservice);
@@ -99,25 +96,16 @@ public class NewTester {
         System.out.println("[填寫備註]");
         String ps = scan.next();
 
-        System.out.println("=====================================\n" + "訂單編號:" );
+
+        System.out.println("=====================================\n");
         run.ordernum();
-        System.out.println( "\n" +"使用者:" + "\n" + username + "\n" + "集運包裹:" );
+        run.nowTime();
+        System.out.println("使用者:" + username + "\n" + "集運包裹:" );
         System.out.println("No." +"\t" + "Name" + "\t" +"Weight");
                 for (int i = 0; i < 5; i++) {
                    packs[i].print();
                 }
-        System.out.println("\n" + "運費:" + tran_price + "元" + "\n" + "包裹附加服務:" + total_sservice + "元" + "\n" + "備註:" + ps );
-
-
-
-
-
-
-
-
-
+        System.out.println("運費:" + tran_price + "元" + "\n" + "包裹附加服務:" + total_sservice + "元" + "\n" + "備註:" + ps );
+        System.out.println("=====================================\n");
     }
-
-
-
 }
